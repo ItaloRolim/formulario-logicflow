@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+   <title>Formulário de contato</title>
+
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/style-icones.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+   <!-- Imagem-logo -->
+   <div id="main-container">
+      <div id="address-container">
+         <div class="fade"></div>
+         <div id="address-content"></div>
+      </div>
+
+   <!-- Formulário -->
+   <div id="form-container">
+         <h2>Iremos entrar em contato com você!</h2>
+         <form action="cadastro.php" id="contact-form">
+
+            <input type="text" name="name" id="name" placeholder="Nome:">
+            <input type="email" name="email" id="email" placeholder="Email:">
+            <input type="number" name="phone" id="phone" placeholder="Telefone:">
+            <input type="submit" value="Enviar">
+            
+            <h3> Ou <br> Entre em contato clicando nos ícones logo abaixo </h3>
+
+            <!-- Links  -->
+
+            <ul>
+               <li style="--cor1: #70e998; --cor2: #10f062;">
+                  <a href="https://wa.me/5511999999999" class="whats" target="_blank">
+                     <i class="bi bi-whatsapp"></i>
+                     <span class="texto">Via Whatsapp</span>
+                  </a>
+               </li>
+
+               <li style="--cor1: #fb3997; --cor2: #fecf12;">
+                  <a href="https://www.instagram.com/logicflow.ai/" class="instagram" target="_blank">
+                     <i class="bi bi-instagram"></i>
+                     <span class="texto">Via Instagram</span>
+                  </a>
+               </li>
+
+               <li style="--cor1: #9ebee9; --cor2: #2e7be0;">
+                  <a href="mailto:logicfloww@gmail.com?subject=Cadastro de contato Logic Flow &body=" class="email" target="_blank">
+                     <i class="bi bi-envelope"></i>
+                     <span class="texto">Via E-mail</span>
+                  </a>
+               </li>
+            </ul>
+         </form>   
+      </div>
+</body>
+</html>
