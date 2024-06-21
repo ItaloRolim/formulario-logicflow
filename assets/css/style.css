@@ -1,268 +1,195 @@
+   /* Estilos gerais */
+   * {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+   }
 
-/* Desktop*/
-* {
-   margin: 0;
-   padding: 0;
-   font-family: Arial, sans-serif;
-   box-sizing: border-box;
-}
+   body {
+      background-color: black;
+   }
 
-body {
-   background-color: black;
-}
-
-/* Containers */
-#main-container {
-   display: flex;
-   flex-direction: row;
-   height: 100vh;
-   flex-wrap: wrap;
-}
-
-#address-container, #form-container {
-   flex: 1 1 50%;
-   height: 100%;
-   text-align: left;
-}
-
-#address-container {
-   background-image: url('../img/logo-logic-flow.jpg');
-   background-size: cover;
-   background-position-x: -50px;
-   position: relative;
-}
-
-.fade {
-   width: 100%;
-   height: 100%; 
-}
-
-/* Form Container */
-#form-container {
-   padding: 50px;
-   text-align: center;
-}
-
-#form-container h2 {
-   text-align: center;
-   color: white;
-   margin-bottom: 15px;
-   font-size: 25px;
-}
-
-#form-container h3 {
-   text-align: center;
-   color: white;
-   margin-bottom: 20px;
-   font-size: 22px;
-}
-
-#contact-form {
-   width: 100%;
-   max-width: 500px;
-   margin: 0 auto;
-   text-align: left;
-}
-
-#contact-form input,
-#contact-form textarea {
-   display: block;
-   padding: 20px;
-   border-radius: 10em;
-   border: 1px solid black;
-   width: 100%;
-   color: white;
-   background-color: #333; /* Caixa de formulário */
-}
-
-
-#contact-form input {
-   margin-bottom: 15px;
-}
-
-#contact-form input::placeholder, 
-#contact-form textarea::placeholder {
-   color: white;
-}
-
-#contact-form input[type="submit"] {
-   background-color: white; 
-   color: #000;
-   font-size: 18px;
-   font-weight: bold;
-   cursor: pointer;
-   width: 100%;
-   max-width: 200px;
-   margin: 30px auto;
-   border: 2px solid transparent;
-
-   transition: .5s;
-}
-
-#contact-form input[type="submit"]:hover {
-   border-color: #2dbc5d;
-   color: #2dbc5d;
-   background-color: #fff;
-
-   transition: .5s;
-}
-
-/* Desktop */
-* {
-   margin: 0;
-   padding: 0;
-   font-family: Arial, sans-serif;
-   box-sizing: border-box;
-}
-
-body {
-   background-color: black;
-}
-
-/* Containers */
-#main-container {
-   display: flex;
-   flex-direction: row;
-   height: 100vh;
-   flex-wrap: wrap;
-}
-
-#address-container, #form-container {
-   flex: 1 1 50%;
-   height: 100%;
-   text-align: left;
-}
-
-#address-container {
-   background-image: url('../img/logo-logic-flow.jpg');
-   background-size: cover;
-   background-position-x: -50px;
-   position: relative;
-}
-
-.fade {
-   width: 100%;
-   height: 100%; 
-}
-
-/* Form Container */
-#form-container {
-   padding: 50px;
-   text-align: center;
-}
-
-#form-container h2 {
-   text-align: center;
-   color: white;
-   margin-bottom: 15px;
-   font-size: 25px;
-}
-
-#form-container h3 {
-   text-align: center;
-   color: white;
-   margin-bottom: 20px;
-   font-size: 22px;
-}
-
-#contact-form {
-   width: 100%;
-   max-width: 500px;
-   margin: 0 auto;
-   text-align: left;
-}
-
-#contact-form input,
-#contact-form textarea {
-   display: block;
-   padding: 20px;
-   border-radius: 10em;
-   border: 1px solid black;
-   width: 100%;
-   color: white;
-   background-color: #333; /* Caixa de formulário */
-}
-
-#contact-form input {
-   margin-bottom: 15px;
-}
-
-#contact-form input::placeholder, 
-#contact-form textarea::placeholder {
-   color: white;
-}
-
-#contact-form input[type="submit"] {
-   background-color: white; 
-   color: #000;
-   font-size: 18px;
-   font-weight: bold;
-   cursor: pointer;
-   width: 100%;
-   max-width: 200px;
-   margin: 30px auto;
-   border: 2px solid transparent;
-
-   transition: .5s;
-}
-
-#contact-form input[type="submit"]:hover {
-   border-color: #2dbc5d;
-   color: #2dbc5d;
-   background-color: #fff;
-
-   transition: .5s;
-}
-
-/* Links */
-a {
-   color: #2dbc5d; /* Cor dos links */
-   text-decoration: none; /* Remove sublinhado dos links */
-   transition: color 0.3s;
-}
-
-a:hover {
-   color: #fff; /* Cor dos links ao passar o mouse */
-}
-
-/* Imagens Responsivas */
-#address-container {
-   max-width: 100%;
-   height: auto;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
+   /* Containers */
    #main-container {
-      flex-direction: column;
-      height: auto;
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+      flex-wrap: wrap;
    }
 
    #address-container, #form-container {
-      flex: 1 1 100%;
-      height: auto;
+      flex: 1 1 50%;
+      height: 100%;
+      text-align: left;
    }
 
+   #address-container {
+      background-image: url('../img/logo-logic-flow.jpg');
+      background-size: cover;
+      background-position-x: -50px;
+      position: relative;
+   }
+
+   .fade {
+      width: 100%;
+      height: 100%; 
+   }
+
+   /* Form Container */
    #form-container {
-      padding: 20px;
+      padding: 50px;
+      text-align: center;
    }
 
    #form-container h2 {
-      font-size: 22px;
+      text-align: center;
+      color: white;
+      margin-bottom: 15px;
+      font-size: 25px;
    }
 
    #form-container h3 {
-      font-size: 18px;
+      text-align: center;
+      color: white;
+      margin-bottom: 20px;
+      font-size: 22px;
+   }
+
+   #contact-form {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: left;
    }
 
    #contact-form input,
    #contact-form textarea {
-      padding: 15px;
+      display: block;
+      padding: 20px;
+      border-radius: 10em;
+      border: 1px solid black;
+      width: 100%;
+      color: white;
+      background-color: #333; /* Caixa de formulário */
+   }
+
+   #contact-form input {
+      margin-bottom: 15px;
+   }
+
+   #contact-form input::placeholder, 
+   #contact-form textarea::placeholder {
+      color: white;
    }
 
    #contact-form input[type="submit"] {
-      font-size: 16px;
-      max-width: 100%;
-      margin: 20px auto;
+      background-color: white; 
+      color: #000;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      max-width: 200px;
+      margin: 30px auto;
+      border: 2px solid transparent;
+      transition: .5s;
    }
-}
+
+   #contact-form input[type="submit"]:hover {
+      border-color: #2dbc5d;
+      color: #2dbc5d;
+      background-color: #fff;
+      transition: .5s;
+   }
+
+   /* Links */
+   a {
+      color: #2dbc5d; /* Cor dos links */
+      text-decoration: none; /* Remove sublinhado dos links */
+      transition: color 0.3s;
+   }
+
+   a:hover {
+      color: #fff; /* Cor dos links ao passar o mouse */
+   }
+
+   /* Imagens Responsivas */
+   img {
+      max-width: 100%;
+      height: auto;
+   }
+
+   /* Lista de ícones de contato */
+   ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+   }
+
+   ul li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+   }
+
+   ul li a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+      padding: 10px;
+      border-radius: 10px;
+      background: linear-gradient(var(--cor1), var(--cor2));
+   }
+
+   ul li a .bi {
+      margin-right: 10px;
+   }
+
+   ul li:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+   }
+
+   /* Mobile */
+   @media (max-width: 768px) {
+      #main-container {
+         flex-direction: column;
+         height: auto;
+      }
+
+      #address-container, #form-container {
+         flex: 1 1 100%;
+         height: auto;
+      }
+
+      #form-container {
+         padding: 20px;
+      }
+
+      #form-container h2 {
+         font-size: 22px;
+      }
+
+      #form-container h3 {
+         font-size: 18px;
+      }
+
+      #contact-form input,
+      #contact-form textarea {
+         padding: 15px;
+      }
+
+      #contact-form input[type="submit"] {
+         font-size: 16px;
+         max-width: 100%;
+         margin: 20px auto;
+      }
+   }
