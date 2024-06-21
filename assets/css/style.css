@@ -106,3 +106,39 @@ body {
 
    transition: .5s;
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+   #main-container {
+      flex-direction: column;
+      height: auto;
+   }
+
+   #address-container, #form-container {
+      flex: 1 1 100%;
+      height: auto;
+   }
+
+   #form-container {
+      padding: 20px;
+   }
+
+   #form-container h2 {
+      font-size: 22px;
+   }
+
+   #form-container h3 {
+      font-size: 18px;
+   }
+
+   #contact-form input,
+   #contact-form textarea {
+      padding: 15px;
+   }
+
+   #contact-form input[type="submit"] {
+      font-size: 16px;
+      max-width: 100%;
+      margin: 20px auto;
+   }
+}
