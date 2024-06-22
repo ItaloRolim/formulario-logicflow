@@ -21,22 +21,13 @@ ul li {
 }
 
 ul li:hover {
-   width: 8rem;
+   width: 108px;
 }
 
 ul li span {
    position: absolute;
 }
 
-ul li .texto {
-   color: #000000;
-   font-size: 18px;
-   transform: scale(0);
-}
-
-ul li:hover .texto {
-   transform: scale(1);
-}
 
 ul li a {
    font-size: 2.5em;

@@ -44,7 +44,7 @@ body {
    z-index: 2; /* Garante que os links estejam no topo */
 }
 
-#form-container h2 {
+#form-container h1, h2 {
    text-align: center;
    color: white;
    margin-bottom: 15px;
@@ -160,5 +160,16 @@ a:hover {
    #address-container {
        position: relative;
        z-index: 0; /* Garante que o container de endereço não sobreponha os links no mobile */
+   }
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+   #address-container {
+       flex: 1 1 50%;
+   }
+
+   #form-container {
+       flex: 1 1 50%;
    }
 }
