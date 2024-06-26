@@ -4,59 +4,55 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-   <title>Formulário de contato</title>
-
-   <!-- <link rel="shortcut icon" href="assets/img/" type="image/x-icon"> colocar o favicon-->
+   <link rel="icon" href="assets/img/logologic.png" type="image/png">
+   <title>logicflow</title>
    <link rel="stylesheet" href="assets/css/style.css">
-   <link rel="stylesheet" href="assets/css/style-icones.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 </head>
 <body>
-   <!-- Imagem-logo -->
-   <div id="main-container">
-      <div id="address-container">
-         <div class="fade"></div>
-         <div id="address-content"></div>
-      </div>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<img src="assets/img/logo-logicflow.jpg" id="blacklogo"></img>
+			<h1 id="first-h1">Entre em contato</h1>
+			<span>Saiba como podemos te ajudar</span>
+			<button class="button">
+				<a href="https://wa.me/9991891129" target="_blank">Mandar mensagem</a>
+			</button>
+			
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1 id="h1-teste">Faça um teste grátis</h1>
+			<span id="span-teste">Deixe seu contato e uma IA entrará em contato através do seu Whatsapp ou e-mail.<br>
+				De forma gratuita você verá o funcionamento de um dos nossas IAs e como nosso produto pode te ajudar na prática!</span>
+			<input class="input-page1" type="text" placeholder="Nome" />
+			<input class="input-page1" type="email" placeholder="Email" />
+         	<input class="input-page1" type="tel" placeholder="Número de telefone" />
+			<a href="#" class="bottom-ele-page1">Até breve!</a>
+			<button class="bottom-ele-page1">Testar</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Aumente em até 67x a peformance da sua empresa!</h1>
+				<p>A IA melhora o desempenho das empresas otimizando tarefas, reduzindo erros e aumentando a eficiência. Ela também contribui para a tomada de decisões eficiente e a redução de custos operacionais.</p>
+				<button class="ghost" id="testargrat">Testar gratuitamente</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<img src="assets/img/logo-logicflow.jpg" id="whitelogo"></img>
+				<h1 id="logic">Logic Flow</h1>
+				<p id="plogic">Impulsione a sua empresa usando o poder da Inteligência Artifical. Já pensou em usar o GPT-4o como funcionário?
+				</p>
+				<button class="ghost" id="entraremcontato">Entrar em contato</button>
+			</div>
+		</div>
+	</div>
+</div>
 
-   <!-- Formulário -->
-   <div id="form-container">
-         <h1>Logic Flow</h1>
-         <h2>
-            Iremos entrar em contato com você!
-         </h2>
-         <form action="cadastro.php" id="contact-form">
+<script src="main.js"></script>
 
-            <input type="text" name="name" id="name" placeholder="Nome:">
-            <input type="email" name="email" id="email" placeholder="Email:">
-            <input type="number" name="phone" id="phone" placeholder="Telefone:">
-            <input type="submit" value="Enviar">
-            
-            <h3> Ou <br> Entre em contato clicando nos ícones logo abaixo </h3>
-
-            <!-- Links  -->
-
-            <ul>
-               <li style="--cor1: #b8ecc9; --cor2: #10f062;">
-                  <a href="https://wa.me/5599981891129" class="whats" target="_blank">
-                     <i class="bi bi-whatsapp"></i>
-                  </a>
-               </li>
-
-               <li style="--cor1: #fb3997; --cor2: #fecf12;">
-                  <a href="https://www.instagram.com/logicflow.ai/" class="instagram" target="_blank">
-                     <i class="bi bi-instagram"></i>
-                  </a>
-               </li>
-
-               <li style="--cor1: #9ebee9; --cor2: #2e7be0;">
-                  <a href="mailto:logicfloww@gmail.com?subject=Cadastro de contato Logic Flow &body=" class="email" target="_blank">
-                     <i class="bi bi-envelope"></i>
-                  </a>
-               </li>
-            </ul>
-         </form>   
-      </div>
 </body>
 </html>
