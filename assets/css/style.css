@@ -10,6 +10,7 @@
     font-size: 1.5rem;
     font-weight: bold;
 }
+
 #whitelogo {
     width: 15rem;
     height: 15rem;
@@ -48,8 +49,6 @@
     width: 10rem;
     padding: 0;
 }
-
-
 
 body {
     background: #fff;
@@ -270,4 +269,51 @@ input {
     font-weight: 600;
     transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
     overflow: hidden;
+}
+
+/* Media Query para telas pequenas */
+@media (max-width: 375px) {
+    #Contato {
+        font-size: 1rem;
+    }
+    #whitelogo {
+        width: 10rem;
+        height: 10rem;
+    }
+    #blacklogo {
+        width: 4.44rem;
+        height: 4.44rem;
+    }
+    #h1-teste {
+        font-size: 1.75rem;
+    }
+    #span-teste {
+        font-size: 0.75rem;
+    }
+    .input-page1 {
+        bottom: 2%;
+    }
+    .bottom-ele-page1 {
+        bottom: -2%;
+    }
+    #sss {
+        height: 7rem;
+        width: 7rem;
+    }
+    p {
+        font-size: 0.875rem;
+    }
+    a {
+        font-size: 0.75rem;
+    }
+    button {
+        padding: 0.5rem 2rem;
+        font-size: 0.625rem;
+    }
+    form {
+        padding: 0 1rem;
+    }
+    .overlay-panel {
+        padding: 0 1.5rem;
+    }
 }
