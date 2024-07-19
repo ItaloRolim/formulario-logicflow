@@ -307,13 +307,33 @@ input {
         font-size: 0.75rem;
     }
     button {
-        padding: 0.5rem 2rem;
+        padding: 0.5rem 1.5rem;
         font-size: 0.625rem;
+        width: 80%;
     }
     form {
         padding: 0 1rem;
+        width: 90%;
     }
     .overlay-panel {
         padding: 0 1.5rem;
+    }
+    .form-container {
+        width: 100%;
+    }
+    .sign-in-container, .sign-up-container {
+        width: 100%;
+    }
+    .overlay-container {
+        width: 100%;
+        left: 0;
+    }
+    .overlay {
+        width: 100%;
+        left: 0;
+    }
+    .overlay-left, .overlay-right {
+        width: 100%;
+        transform: translateX(0);
     }
 }
