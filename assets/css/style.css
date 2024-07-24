@@ -405,3 +405,14 @@ nav ul li a:hover {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 }
+
+/* Esconder o menu hambúrguer em telas maiores */
+@media (min-width: 768px) {
+    .menu-hamburger {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+}
