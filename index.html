@@ -11,25 +11,10 @@
 
 </head>
 <body>
-   <!-- Menu Adicionado -->
-   <nav>
-	<div class="menu-hamburger">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-      <ul>
-         <li><h4>Nossas Redes:</h4></li>
-         <li><a href="https://wa.me/559991891129" target="_blank">Whatsapp</a></li>
-         <li><a href= "#servicos">Instagram</a></li>
-         <li><a href="#contato">E-mail</a></li>
-      </ul>
-   </nav>
-   
    <div class="container" id="container">
       <div class="form-container sign-up-container">
          <form action="#">
-            <img src="assets/img/logo-logicflow.jpg" id="blacklogo"></img>
+            <img src="assets/img/logo-logicflow.jpg" id="blacklogo" alt="Logic Flow Logo">
             <h1 id="first-h1">Entre em contato</h1>
             <span>Saiba como podemos te ajudar</span>
             <button class="button">
@@ -42,9 +27,9 @@
             <h1 id="h1-teste">Faça um teste grátis</h1>
             <span id="span-teste">Deixe seu contato e uma IA entrará em contato através do seu Whatsapp ou e-mail.<br>
             De forma gratuita você verá o funcionamento de um dos nossas IAs e como nosso produto pode te ajudar na prática!</span>
-            <input class="input-page1" type="text" placeholder="Nome" />
-            <input class="input-page1" type="email" placeholder="Email" />
-            <input class="input-page1" type="number" placeholder="Número de telefone" />
+            <input class="input-page1" type="text" placeholder="Nome">
+            <input class="input-page1" type="email" placeholder="Email">
+            <input class="input-page1" type="number" placeholder="Número de telefone">
             <a href="https://api.whatsapp.com/send?phone=559991891129" class="bottom-ele-page1">Até breve!</a>
             <button class="bottom-ele-page1">Enviar</button>
          </form>
@@ -52,22 +37,25 @@
       <div class="overlay-container">
          <div class="overlay">
             <div class="overlay-panel overlay-left">
-               <h1>Aumente em até 67x a peformance da sua empresa!</h1>
+               <h1>Aumente em até 67x a performance da sua empresa!</h1>
                <p>A IA melhora o desempenho das empresas otimizando tarefas, reduzindo erros e aumentando a eficiência. Ela também contribui para a tomada de decisões eficiente e a redução de custos operacionais.</p>
                <button class="ghost" id="testargrat">Testar gratuitamente</button>
             </div>
             <div class="overlay-panel overlay-right">
-               <img src="assets/img/logo-logicflow.jpg" id="whitelogo"></img>
+               <img src="assets/img/logo-logicflow.jpg" id="whitelogo" alt="Logic Flow Logo">
                <h1 id="logic">Logic Flow</h1>
-               <p id="plogic">Impulsione a sua empresa usando o poder da Inteligência Artifical. Já pensou em usar o GPT-4o como funcionário?
-               </p>
+               <p id="plogic">Impulsione a sua empresa usando o poder da Inteligência Artificial. Já pensou em usar o GPT-4 como funcionário?</p>
                <button class="ghost" id="entraremcontato">Entrar em contato</button>
             </div>
          </div>
       </div>
    </div>
 
-   <script src="main.js"></script>
+   <!-- Botão flutuante do WhatsApp -->
+   <a href="https://wa.me/559991891129" target="_blank" class="whatsapp-button">
+      <img src="assets/img/logo-whatsapp.avif" alt="WhatsApp">
+   </a>
 
+   <script src="main.js"></script>
 </body>
 </html>

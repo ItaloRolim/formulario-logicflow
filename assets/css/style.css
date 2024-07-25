@@ -278,141 +278,23 @@ input {
     overflow: hidden;
 }
 
-/* Estilo do Menu */
-nav {
-    background-color: #00000000;
-    width: 100%;
-    padding: 10px 0;
+/* Estilização do botão flutuante do WhatsApp */
+.whatsapp-button {
     position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
+    bottom: -6px;
+    right: 10px;
+    background-color: #25d366;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
-    margin: 0;
-}
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+ }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: rgb(15, 15, 15);
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #070707;
-}
-
-.menu-hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.menu-hamburger .bar {
-    width: 30px;
-    height: 5px;
-    background-color: rgb(22, 22, 22);
-    margin: 4px 0;
-    transition: 0.4s;
-}
-
-/* Media Queries for small to medium screens */
-@media (max-width: 767px) and (min-width: 344px) {
-    body {
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-
-    #whitelogo, #blacklogo, .overlay-container, .overlay {
-        display: none;
-    }
-
-    .sign-in-container, .sign-up-container {
-        width: 100%;
-    }
-
-    .form-container {
-        width: 100%;
-        padding: 1rem;
-    }
-
-    form {
-        width: 100%;
-    }
-
-    .input-page1 {
-        max-width: 100%;
-    }
-
-    button {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 155px;
-        background-color: #f8f6f6f1;
-        padding-top: 60px;
-        z-index: 1001;
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .menu-hamburger {
-        display: flex;
-        position: absolute;
-        top: -5px;
-        right: -5px;
-        z-index: 1002;
-    }
-
-    .menu-hamburger.active .bar:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .menu-hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-hamburger.active .bar:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-}
-
-/* Esconder o menu hambúrguer em telas maiores */
-@media (min-width: 768px) {
-    .menu-hamburger {
-        display: none;
-    }
-
-    nav ul {
-        display: none;
-    }
-}
+ .whatsapp-button img {
+    width: 40px;
+    height: 40px;
+ }

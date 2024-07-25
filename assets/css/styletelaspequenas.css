@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+/* Media Queries telas pequenas */
+@media (max-width: 767px) and (min-width: 344px) {
+    body {
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    #whitelogo, #blacklogo, .overlay-container, .overlay {
+        display: none;
+    }
+
+    .sign-in-container, .sign-up-container {
+        width: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .input-page1 {
+        max-width: 100%;
+    }
+
+    button {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 155px;
+        background-color: #f8f6f6f1;
+        padding-top: 60px;
+        z-index: 1001;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+}
+
+@media (max-width: 343px), (min-width: 768px) {
+    .whatsapp-button {
+        display: none;
+    }
+}
