@@ -8,7 +8,6 @@
    <title>logicflow</title>
    <link rel="stylesheet" href="assets/css/style.css">
    <link rel="stylesheet" href="assets/css/styletelaspequenas.css">
-
 </head>
 <body>
    <div class="container" id="container">
@@ -23,15 +22,15 @@
          </form>
       </div>
       <div class="form-container sign-in-container">
-         <form action="#">
+         <form id="contactForm" action="#">
             <h1 id="h1-teste">Faça um teste grátis</h1>
             <span id="span-teste">Deixe seu contato e uma IA entrará em contato através do seu Whatsapp ou e-mail.<br>
             De forma gratuita você verá o funcionamento de um dos nossas IAs e como nosso produto pode te ajudar na prática!</span>
-            <input class="input-page1" type="text" placeholder="Nome">
-            <input class="input-page1" type="email" placeholder="Email">
-            <input class="input-page1" type="number" placeholder="Número de telefone">
+            <input class="input-page1" type="text" id="name" placeholder="Nome">
+            <input class="input-page1" type="email" id="email" placeholder="Email">
+            <input class="input-page1" type="number" id="number" placeholder="Número de telefone">
             <a href="https://api.whatsapp.com/send?phone=559991891129" class="bottom-ele-page1">Até breve!</a>
-            <button class="bottom-ele-page1">Enviar</button>
+            <button type="submit" class="bottom-ele-page1">Enviar</button>
          </form>
       </div>
       <div class="overlay-container">
@@ -57,5 +56,6 @@
    </a>
 
    <script src="main.js"></script>
+   <script src="data.js"></script>
 </body>
 </html>
